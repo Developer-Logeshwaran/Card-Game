@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="controls">
+            <button id="start-btn">Start Game</button>
+            <button id="stop-btn" class="hide">Stop Game</button>
+            <button id="resumeBtn" style="display:none;">Resume</button>
+            <button id="exitBtn" style="display:none;">Exit</button>
+            <div id="time">Time: 0s</div>
+            <div id="moves-count">Moves: 0</div>
+        </div>
+        <div id="game-board" class="game-board"></div>
+        <div id="result" class="result hide">
+            <h2>Congratulations! You Won!</h2>
+            <p>Moves: <span id="final-moves"></span> | Time: <span id="final-time"></span></p>
+            <button id="restart-btn">Restart</button>
+        </div>
+        
+        <!-- Added section for the rating display -->
+        <div id="rating" class="rating hide">
+            <h3>Your Rating</h3>
+            <div id="stars"></div>
+            <p id="rating-message"></p>
+        </div>
+    </div>
+
+    <script src="./Script.js"></script>
+</body>
+</html>
